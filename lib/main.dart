@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_app/widgets/media_query.dart';
 
 void main() {
-  runApp(const MediaQueryTest());
+  runApp(const ResponsiveTest());
 }
 
-class MediaQueryTest extends StatelessWidget {
-  const MediaQueryTest({super.key});
+class ResponsiveTest extends StatelessWidget {
+  const ResponsiveTest({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body: MediaQueryTest(),
+      ),
+    );
   }
 }
