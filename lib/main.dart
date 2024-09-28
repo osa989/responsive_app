@@ -13,7 +13,7 @@ class ResponsiveTest extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: MediaQueryTest(),
+        body: MediaQueryTest(), 
       ),
     );
   }
