@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_app/widgets/expanded_widget.dart';
+import 'package:responsive_app/widgets/flexible_widget.dart';
 import 'package:responsive_app/widgets/layout_builder.dart';
 import 'package:responsive_app/widgets/media_query.dart';
 
@@ -16,7 +17,7 @@ class ResponsiveTest extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(),
-        body: const ExpandedWidget(),
+        body: const FlexibleWidget(),
       ),
     );
   }
@@ -24,3 +25,4 @@ class ResponsiveTest extends StatelessWidget {
 // MediaQueryTest
 // LayoutBuilderExample
 // ExpandedWidget
+// FlexibleWidget
