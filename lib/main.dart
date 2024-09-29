@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_app/widgets/layout_builder.dart';
 import 'package:responsive_app/widgets/media_query.dart';
 
 void main() {
@@ -13,8 +14,10 @@ class ResponsiveTest extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: MediaQueryTest(), 
+        body: LayoutBuilderExample(),
       ),
     );
   }
 }
+// MediaQueryTest
+// LayoutBuilderExample
