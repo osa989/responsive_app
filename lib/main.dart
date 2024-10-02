@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_app/widgets/aspect_ratio.dart';
 import 'package:responsive_app/widgets/expanded_widget.dart';
 import 'package:responsive_app/widgets/fitted_box.dart';
 import 'package:responsive_app/widgets/flexible_widget.dart';
+import 'package:responsive_app/widgets/intrinsic_widgets.dart';
 import 'package:responsive_app/widgets/layout_builder.dart';
 import 'package:responsive_app/widgets/media_query.dart';
 
@@ -18,7 +20,7 @@ class ResponsiveTest extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(),
-        body: const FittedBoxWidget(),
+        body: const IntrinsicWidgets(),
       ),
     );
   }
@@ -28,3 +30,5 @@ class ResponsiveTest extends StatelessWidget {
 // ExpandedWidget
 // FlexibleWidget
 // FittedBoxWidget
+//AspectRatioExample
+//IntrinsicWidgets
