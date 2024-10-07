@@ -8,7 +8,6 @@
 // import 'package:responsive_app/widgets/media_query.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_app/views/home_view.dart';
-import 'package:responsive_app/views/widgets/custom_drawer.dart';
 
 void main() {
   runApp(const ResponsiveTest());
@@ -26,11 +25,3 @@ class ResponsiveTest extends StatelessWidget {
   }
 }
 
-// MediaQueryTest
-// LayoutBuilderExample
-// ExpandedWidget
-// FlexibleWidget
-// FittedBoxWidget
-//AspectRatioExample
-//IntrinsicWidgets
-//HomeView
