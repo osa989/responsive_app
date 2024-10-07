@@ -7,7 +7,7 @@
 // import 'package:responsive_app/widgets/layout_builder.dart';
 // import 'package:responsive_app/widgets/media_query.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_app/views/simple_design.dart';
+import 'package:responsive_app/views/home_view.dart';
 
 void main() {
   runApp(const ResponsiveTest());
@@ -29,7 +29,7 @@ class ResponsiveTest extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        body: const SimpleDesign(),
+        body: const HomeView(),
       ),
     );
   }
@@ -41,4 +41,4 @@ class ResponsiveTest extends StatelessWidget {
 // FittedBoxWidget
 //AspectRatioExample
 //IntrinsicWidgets
-//SimpleDesign
+//HomeView
