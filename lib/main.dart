@@ -8,25 +8,40 @@
 // import 'package:responsive_app/widgets/media_query.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_app/views/home_view.dart';
+import 'package:responsive_app/views/widgets/custom_drawer.dart';
 
 void main() {
   runApp(const ResponsiveTest());
 }
 
-class ResponsiveTest extends StatelessWidget {
+class ResponsiveTest extends StatefulWidget {
   const ResponsiveTest({super.key});
+
+  @override
+  State<ResponsiveTest> createState() => _ResponsiveTestState();
+}
+
+class _ResponsiveTestState extends State<ResponsiveTest> {
+  GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        key: scaffoldKey,
+        drawer: const CustomDrawer(),
         backgroundColor: const Color(0xffDBDBDB),
         appBar: AppBar(
           backgroundColor: Colors.black,
-          leading: const Icon(
-            Icons.menu,
-            color: Colors.white,
+          leading: GestureDetector(
+            onTap: () {
+              scaffoldKey.currentState!.openDrawer();
+            },
+            child: const Icon(
+              Icons.menu,
+              color: Colors.white,
+            ),
           ),
         ),
         body: const HomeView(),
