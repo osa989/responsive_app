@@ -14,41 +14,18 @@ void main() {
   runApp(const ResponsiveTest());
 }
 
-class ResponsiveTest extends StatefulWidget {
+class ResponsiveTest extends StatelessWidget {
   const ResponsiveTest({super.key});
 
   @override
-  State<ResponsiveTest> createState() => _ResponsiveTestState();
-}
-
-class _ResponsiveTestState extends State<ResponsiveTest> {
-  GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
-
-  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        key: scaffoldKey,
-        drawer: const CustomDrawer(),
-        backgroundColor: const Color(0xffDBDBDB),
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          leading: GestureDetector(
-            onTap: () {
-              scaffoldKey.currentState!.openDrawer();
-            },
-            child: const Icon(
-              Icons.menu,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        body: const HomeView(),
-      ),
+      home: HomeView()
     );
   }
 }
+
 // MediaQueryTest
 // LayoutBuilderExample
 // ExpandedWidget
