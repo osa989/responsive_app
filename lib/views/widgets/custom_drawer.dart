@@ -5,7 +5,7 @@ import 'package:responsive_app/views/widgets/custom_drawer_items_list_view.dart'
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
-  final List<DrawerItemModel> items = const [
+  static const List<DrawerItemModel> items = [
     DrawerItemModel(
       title: "D A S H B O A R D",
       icon: Icons.home,
