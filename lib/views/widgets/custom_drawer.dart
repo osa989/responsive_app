@@ -11,15 +11,15 @@ class CustomDrawer extends StatelessWidget {
       icon: Icons.home,
     ),
     DrawerItemModel(
-      title: "S E T T I N G S",
+      title: "S E T T I N G S  ",
       icon: Icons.settings,
     ),
     DrawerItemModel(
-      title: "A B O U T",
+      title: "A B O U T        ",
       icon: Icons.info,
     ),
     DrawerItemModel(
-      title: "L O G O U T",
+      title: "L O G O U T      ",
       icon: Icons.logout,
     ),
   ];
